@@ -5,18 +5,34 @@
 Linux Machine Manager is a script for managing some tasks on a Linux Machine using bash, for a teaching purpose.
 It display a menu which let you decide beetween this different tasks :
 
+## Coming Soon 
+
+### System
+
 - Display hardware informations about the system
 - Display software informations about the system
 - Make a backup of the MBR and the GRUB configuration file
-- Display of the network configuration
-- Sending a file to another machine
 - Seeing and installing updates of the Linux operating system, whatever the linux family system is
+- Save the system logs
+- Restore the system logs
+- Save the /home folder
+- Restore the /home folder
+
+### Network
+
+- Display of the network configuration
+- Trying to ping a bunch of other machines
+- Sending a file to another machine
 - Proposing to install admin tools and some other stuff
   - pstree, tree, btop, pv,   commands
   - openssh server
-- 
-- Installing some flatpaks software if a display server is installed
-- Trying to ping a bunch of other machines
-- 
+
+### Desktop Environment
+
+- Installing some flatpaks software if a display server is detected
+- Save the KDE Plasma configuration
+- Restore the KDE Plasma configuration
+- Save the GNOME configuration
+- Restore the GNOME configuration
 
 
