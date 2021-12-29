@@ -9,12 +9,11 @@ It display a menu which let you decide beetween this different tasks :
 
 ### System
 
-- Display hardware informations about the system
-- Display software informations about the system
-- Make a backup of the MBR and the GRUB configuration file
-- Seeing and installing updates of the Linux operating system, whatever the linux family system is
+- [x] Display hardware informations about the system
+- [x] Display software informations about the system
+- [x] Make a backup of the MBR and the GRUB configuration file
+- [x] Seeing and installing updates of the Linux operating system, whatever the linux family system is
 - Save the system logs
-- Restore the system logs
 - Save the /home folder
 - Restore the /home folder
 
