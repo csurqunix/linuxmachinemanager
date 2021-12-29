@@ -13,7 +13,7 @@ It display a menu which let you decide beetween this different tasks :
 - [x] Display software informations about the system
 - [x] Make a backup of the MBR and the GRUB configuration file
 - [x] Seeing and installing updates of the Linux operating system, whatever the linux family system is
-- Save the system logs
+- [x] Save the system logs
 - Save the /home folder
 - Restore the /home folder
 
