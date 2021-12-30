@@ -14,7 +14,7 @@ It display a menu which let you decide beetween this different tasks :
 - [x] Make a backup of the MBR and the GRUB configuration file
 - [x] Seeing and installing updates of the Linux operating system, whatever the linux family system is
 - [x] Save the system logs
-- Save the /home folder
+- [x] Save the /home folder
 - Restore the /home folder
 
 ### Network
