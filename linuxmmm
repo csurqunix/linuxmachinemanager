@@ -1,0 +1,81 @@
+#!/bin/bash
+###############################################################
+                            #VARIABLES#
+###############################################################
+rouge='\e[1;31m'            #couleur rouge
+vertg='\e[1;32m'            #couleur verte en gras
+vert='\e[0;32m'             #couleur verte
+cyan='\e[1;36m'             #couleur cyan
+magenta='\e[1;35m'          #couleur magenta
+noir='\e[1;30m'             #couleur noire
+vertbackg='\e[1;42m'        #arrière plan du texte en vert, caractères en gras
+neutre='\e[0;37m'           #retour au texte sans couleur
+options=("Obtenir des informations sur le hardware" "Obtenir des informations sur le software" "Faire une sauvegarde du MBR/GPT" "Faire les mises à jour" "Exporter les journaux systèmes" "Sauvegarder votre dossier personnel" "Quitter")
+PS3=$(FUNC_MENU)
+
+###############################################################
+#FONCTIONS#
+###############################################################
+
+source funcverifroot.sh
+source funcdistro.sh
+source funcban.sh
+source funcinfosys.sh
+source funcsavembrgpt.sh
+source funcmaj.sh
+source funclogs.sh
+source funcsavehome.sh
+
+###############################################################
+#DÉBUT DU SCRIPT#
+###############################################################
+
+clear
+echo -e "\n"
+FUNC_MENU()
+{
+clear
+echo -e "\n"
+FUNC_BAN
+echo -e "$vert Sélectionnez une option $neutre \n"
+select choix in "${options[@]}"
+do
+    case $choix in
+        "Obtenir des informations sur le hardware")
+        clear
+        FUNC_BAN
+        FUNC_INFOHARD
+        sleep 1
+        ;;
+        "Obtenir des informations sur le software")
+        clear
+        FUNC_BAN
+        FUNC_INFOSOFT
+        ;;
+        "Faire une sauvegarde du MBR/GPT")
+        clear
+        FUNC_SAVEBOOT
+        ;;
+        "Faire les mises à jour")
+        clear
+        FUNC_BAN
+        FUNC_DISTRO
+        FUNC_MAJ
+        ;;
+        "Exporter les journaux systèmes")
+        FUNC_BAN
+        FUNC_LOGS
+        ;;
+        "Sauvegarder votre dossier personnel")
+        FUNC_BAN
+        FUNC_HOMESAVE
+        ;;
+        "Quitter")
+        echo -e "\n\tBye bye !\n"
+        exit 0
+        ;;
+    esac
+done
+}
+
+FUNC_MENU
