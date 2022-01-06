@@ -2,6 +2,10 @@
 ###############################################################
                             #VARIABLES#
 ###############################################################
+
+#nous déclarons ici les variables utilisées pour la mise en forme (couleurs)
+#ces variables seront appelées par les fonctions du script
+
 rouge='\e[1;31m'            #couleur rouge
 vertg='\e[1;32m'            #couleur verte en gras
 vert='\e[0;32m'             #couleur verte
@@ -17,6 +21,9 @@ PS3=$(FUNC_MENU)
 #FONCTIONS#
 ###############################################################
 
+#nous listons ici les fichiers contenant les fonctions qui seront utilisées dans ce script
+#les fonctions ont été externalisées afin de rendre le script plus lisible, et les fonctions réutilisables par d'autres scripts
+
 source funcverifroot.sh
 source funcdistro.sh
 source funcban.sh
@@ -30,8 +37,10 @@ source funcsavehome.sh
 #DÉBUT DU SCRIPT#
 ###############################################################
 
+#nettoyage de l'écran
 clear
 echo -e "\n"
+#affichage du menu de sélection principal
 FUNC_MENU()
 {
 clear
