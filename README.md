@@ -1,11 +1,16 @@
 # Linux Machine Manager
 
+<p align="center">
+<img src="Assets/LMM-Demo.gif"/>
+</p>
+
 #### This is a repository for shell scripts about managing a Linux Machine ####
 
 Linux Machine Manager is a script for managing some tasks on a Linux Machine using bash, for a teaching purpose.
+
 It display a menu which let you decide beetween this different tasks :
 
-## Coming Soon 
+## Current Features
 
 ### System
 
@@ -16,6 +21,8 @@ It display a menu which let you decide beetween this different tasks :
 - [x] Save the system logs
 - [x] Save the /home folder
 - Restore the /home folder
+
+## Coming Soon
 
 ### Network
 
