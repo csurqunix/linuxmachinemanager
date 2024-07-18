@@ -6,7 +6,8 @@
 
 #### This is a repository for shell scripts about managing a Linux Machine ####
 
-Linux Machine Manager is a script for managing some tasks on a Linux Machine using bash, for a teaching purpose.
+Linux Machine Manager is a script for managing some tasks on a Linux Machine using bash, for **bash teaching purpose ONLY**
+It uses many different commands to offer a wide range of knowledge to users and students. Optimizing the code to use the same commands and conventions everywhere is NOT the subject of this repository!
 
 It display a menu which let you decide beetween this different tasks :
 
