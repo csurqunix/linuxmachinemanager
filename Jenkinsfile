@@ -11,7 +11,7 @@ pipeline {
         stage('Exécution du Script') {
             steps {
                 sh 'chmod +x linuxmmm'
-                sh 'sudo ./linuxmmm'
+                bash './linuxmmm'
             }
         }
     }
