@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 OS=$(cat /etc/os-release | grep ^NAME | cut -d= -f2 | cut -c2-7) #Détecte le type de système Linux
 pm="" #définit le gestionnaire de paquets à utiliser
