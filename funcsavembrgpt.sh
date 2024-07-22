@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 #La variable "bootype" ici crée execute une commande qui nous permet de vérifier très simplement si le système boot via un MBR ou un GPT
 boottype=$(parted -l | grep -i "Table de partitions" | grep -v loop | cut -d: -f2)
