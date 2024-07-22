@@ -24,14 +24,14 @@ PS3=$(FUNC_MENU)
 #nous listons ici les fichiers contenant les fonctions qui seront utilisées dans ce script
 #les fonctions ont été externalisées afin de rendre le script plus lisible, et les fonctions réutilisables par d'autres scripts
 
-source funcverifroot.sh
-source funcdistro.sh
-source funcban.sh
-source funcinfosys.sh
-source funcsavembrgpt.sh
-source funcmaj.sh
-source funclogs.sh
-source funcsavehome.sh
+source ./funcverifroot.sh
+source ./funcdistro.sh
+source ./funcban.sh
+source ./funcinfosys.sh
+source ./funcsavembrgpt.sh
+source ./funcmaj.sh
+source ./funclogs.sh
+source ./funcsavehome.sh
 
 ###############################################################
 #DÉBUT DU SCRIPT#
