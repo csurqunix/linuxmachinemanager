@@ -87,4 +87,5 @@ do
 done
 }
 
+FUNC_VERIFROOT
 FUNC_MENU
