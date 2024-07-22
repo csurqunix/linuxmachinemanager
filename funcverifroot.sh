@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Morceau de script pour vérifier que l'utilisateur est bien root
-
+FUNC_VERIFROOT()
+{
 i=$(id -u)
 if [[ $? -ne 0 ]]
     then exit 1
@@ -12,3 +13,4 @@ if [[ "$i" -ne 0 ]]
 	echo "Le script doit s'executer en tant que root" >&2
 	exit 2
 fi
+}
