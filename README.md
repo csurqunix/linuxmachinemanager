@@ -19,27 +19,7 @@ It display a menu which let you decide beetween this different tasks :
 - [x] Display software informations about the system
 - [x] Make a backup of the MBR and the GRUB configuration file
 - [x] Seeing and installing updates of the Linux operating system, whatever the linux family system is
-- [x] Save the system logs
+- [x] Save the system logs according to different criteria
 - [x] Save the /home folder
 - Restore the /home folder
-
-## Coming Soon
-
-### Network
-
-- Display of the network configuration
-- Trying to ping a bunch of other machines
-- Sending a file to another machine
-- Proposing to install admin tools and some other stuff
-  - pstree, tree, btop, pv,   commands
-  - openssh server
-
-### Desktop Environment
-
-- Installing some flatpaks software if a display server is detected
-- Save the KDE Plasma configuration
-- Restore the KDE Plasma configuration
-- Save the GNOME configuration
-- Restore the GNOME configuration
-
 
